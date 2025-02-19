@@ -241,24 +241,6 @@
 			"response": []
 		},
 		{
-			"name": "TicketModel",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "{{base_url1}}/tickets/{id}",
-					"host": [
-						"{{base_url1}}"
-					],
-					"path": [
-						"tickets",
-						"{id}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "User",
 			"request": {
 				"method": "DELETE",
