@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "27de96ce-0b33-4388-ab35-152a5d3a4142",
+		"name": "TicketApp2024",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34716277"
+	},
+	"item": [
+		{
+			"name": "OneTicketModel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/tickets/{id}",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"tickets",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OneUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/users/{id}",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"users",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OneDevice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/devices/{id}",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"devices",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllTicket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/tickets",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/users",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllDevice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/devices",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tickets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"titre\": \"Problème de connexion réseau\",\r\n        \"description\": \"Impossible de se connecter au réseau de l'entreprise.\",\r\n        \"dateCreation\": \"2024-11-29T09:00:00Z\",\r\n        \"dateMiseAJour\": \"2024-11-29T10:00:00Z\",\r\n        \"impact\": \"Bloquant\",\r\n        \"etat\": \"Ouvert\",\r\n        \"utilisateurCreateur\": {\r\n            \"id\": 101,\r\n            \"nom\": \"Jean Dupont\",\r\n            \"email\": \"jean.dupont@example.com\"\r\n        },\r\n        \"posteInformatique\": {\r\n            \"id\": \"PC-001\",\r\n            \"nom\": \"Poste Jean Dupont\"\r\n        },\r\n        \"typeDemande\": \"Assistance Réseau\"\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"titre\": \"Mise à jour de logiciel\",\r\n        \"description\": \"Installation de la dernière version d'Office.\",\r\n        \"dateCreation\": \"2024-11-28T14:30:00Z\",\r\n        \"dateMiseAJour\": \"2024-11-28T15:00:00Z\",\r\n        \"impact\": \"Mineur\",\r\n        \"etat\": \"En cours\",\r\n        \"utilisateurCreateur\": {\r\n            \"id\": 102,\r\n            \"nom\": \"Marie Lemoine\",\r\n            \"email\": \"marie.lemoine@example.com\"\r\n        },\r\n        \"posteInformatique\": {\r\n            \"id\": \"PC-002\",\r\n            \"nom\": \"Poste Marie Lemoine\"\r\n        },\r\n        \"typeDemande\": \"Mise à jour logicielle\"\r\n    }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url1}}/tickets",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url1}}/users",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "devices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url1}}/devices",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTicketModel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/tickets",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/users",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDevice",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/devices",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TicketModel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/tickets/{id}",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"tickets",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/users/{id}",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"users",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url1}}/devices/{id}",
+					"host": [
+						"{{base_url1}}"
+					],
+					"path": [
+						"devices",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
